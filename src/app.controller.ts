@@ -1,4 +1,4 @@
-import { Controller, Post, Req, Res, Logger, Body } from '@nestjs/common';
+import { Controller, Post, Req, Res, Logger } from '@nestjs/common';
 import { AppService } from './app.service';
 import { Request, Response } from 'express';
 
@@ -14,7 +14,7 @@ export class AppController {
       this.logger.log(request.body); // Mensaje de log
       // use fetch to send the data to the other server
       console.log(request.body);
-      fetch('https://back-homo.gcasaservices.com/api/webhook/', {
+      fetch('https//back-prod.gcasaservices.com/api/webhook/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
