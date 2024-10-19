@@ -14,7 +14,7 @@ export class AppController {
       this.logger.log(request.body); // Mensaje de log
       // use fetch to send the data to the other server
       console.log(request.body);
-      fetch('https//back-prod.gcasaservices.com/api/webhook/', {
+      fetch('https//back-prod.gcasaservices.com/api/webhook/eyJhbGci', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
